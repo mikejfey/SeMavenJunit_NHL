@@ -32,15 +32,15 @@ public class AcmeBankTest {
         System.setProperty("webdriver.chrome.driver","/Users/michafey/chromedriver-mac-x64/chromedriver");
         WebDriver driver = new ChromeDriver();
       System.out.println("running the test");
-        driver.get("https://demo.applitools.com");
+        driver.get("https://www.applause.com");
 
         driver.manage().window().setSize(new Dimension(1558, 983));
-        driver.findElement(By.id("username")).click();
-        driver.findElement(By.id("username")).sendKeys("mike");
-        driver.findElement(By.id("password")).click();
-        driver.findElement(By.id("password")).sendKeys("mike");
-        driver.findElement(By.id("log-in")).click();
-        driver.close();
+        //driver.findElement(By.id("username")).click();
+        //driver.findElement(By.id("username")).sendKeys("mike");
+       // driver.findElement(By.id("password")).click();
+        //driver.findElement(By.id("password")).sendKeys("mike");
+        //driver.findElement(By.id("log-in")).click();
+       // driver.close();
         // Verify the full login page loaded correctly.
         //eyes.check(Target.window().fully().withName("Login page"));
 
