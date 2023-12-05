@@ -3,7 +3,7 @@ import org.junit.Test;
 import org.junit.Before;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.core.IsNot.not;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Dimension;
@@ -21,16 +21,16 @@ public class AcmeBankTest {
     JavascriptExecutor js;
     @Before
     public void setUp() {
-       // System.setProperty("webdriver.chrome.driver","/Users/michafey/chromedriver-mac-x64/chromedriver");
-      //  WebDriver driver = new ChromeDriver();
+       //System.setProperty("webdriver.chrome.driver","/Users/michafey/chromedriver-mac-x64/chromedriver");
+      // WebDriver driver = new ChromeDriver();
 
     }
     @Test
-    public void logIntoBankAccounttest() {
+    public void NHLtest() {
 
 
-        System.setProperty("webdriver.chrome.driver","/Users/michafey/chromedriver-mac-x64/chromedriver");
-        WebDriver driver = new ChromeDriver();
+      System.setProperty("webdriver.chrome.driver","/Users/michafey/chromedriver-mac-x64/chromedriver");
+      WebDriver driver = new ChromeDriver();
       System.out.println("running the test");
         driver.get("https://www.applause.com");
 
@@ -40,7 +40,7 @@ public class AcmeBankTest {
        // driver.findElement(By.id("password")).click();
         //driver.findElement(By.id("password")).sendKeys("mike");
         //driver.findElement(By.id("log-in")).click();
-       // driver.close();
+        driver.close();
         // Verify the full login page loaded correctly.
         //eyes.check(Target.window().fully().withName("Login page"));
 
